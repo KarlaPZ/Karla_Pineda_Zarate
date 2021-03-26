@@ -5,6 +5,10 @@
  */
 package uptlax.Practicaa9;
 
+import uptlax.Practicaa9.clasesJSON.Persona;
+import uptlax.Practicaa9.clasesJSON.Personas;
+import com.google.gson.Gson;
+
 /**
  *
  * @author karla pineda zarate
@@ -18,9 +22,23 @@ public class Main {
         // TODO code application logic here
         Archivo archivo = new Archivo("archivos/personas.txt");
         String temp = archivo.leer();
-        System.out.println(temp);
+        System.out.println("Este es el JSON: "+temp);
+        try{
+            Gson gson = new Gson();
+            Personas arregloPersonas= gson.fromJson(temp, Personas.class);
+            System.out.println("Nuestro arreglo de personas contiene: "+arregloPersonas.getPersonas().size());
+            for (int i = 0; i < arregloPersonas.getPersonas().size(); i++){
+                System.out.println("Numero de personas: "+i);
+                System.out.println("El nombre de la personas es: "+arregloPersonas.getPersonas().get(i).getNombre().getNombre());
+                System.out.println("La edad de las personas es: "+arregloPersonas.getPersonas().get(i).getEdad());
+            }
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
         
-        archivo.escribir("archivos/nuevo_archivo.txt","Esto es nuevo",false);
+        
+       /* archivo.escribir("archivos/nuevo_archivo.txt","Esto es nuevo",false);
         
         Persona persona = new Persona();
         persona.setNombre("Ulises");
@@ -31,7 +49,7 @@ public class Main {
         
         Persona personaDesdeArchivo = archivo.leerObjeto("archivos/persona.data");
         System.out.println(personaDesdeArchivo.getNombre());
-        System.out.println(personaDesdeArchivo.getCompania());
+        System.out.println(personaDesdeArchivo.getCompania());*/
     }
     
 }

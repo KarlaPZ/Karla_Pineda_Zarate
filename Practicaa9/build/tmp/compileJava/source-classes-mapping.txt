@@ -1,8 +1,12 @@
 Practicaa9/Main.java
  Practicaa9.Main
+uptlax/Practicaa9/clasesJSON/Personas.java
+ uptlax.Practicaa9.clasesJSON.Personas
+uptlax/Practicaa9/clasesJSON/Nombre.java
+ uptlax.Practicaa9.clasesJSON.Nombre
+uptlax/Practicaa9/clasesJSON/Persona.java
+ uptlax.Practicaa9.clasesJSON.Persona
 uptlax/Practicaa9/Archivo.java
  uptlax.Practicaa9.Archivo
-uptlax/Practicaa9/Persona.java
- uptlax.Practicaa9.Persona
 uptlax/Practicaa9/Main.java
  uptlax.Practicaa9.Main
