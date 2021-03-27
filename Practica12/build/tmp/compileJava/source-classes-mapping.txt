@@ -1,0 +1,6 @@
+Uptlax/Poo/Karla/Practica12/Main.java
+ Uptlax.Poo.Karla.Practica12.Main
+Uptlax/Poo/Karla/Practica12/Interfaz.java
+ Uptlax.Poo.Karla.Practica12.Interfaz
+ Uptlax.Poo.Karla.Practica12.Interfaz$1
+ Uptlax.Poo.Karla.Practica12.Interfaz$2
